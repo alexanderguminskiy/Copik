@@ -1,6 +1,6 @@
 .promo {
     padding-top: 20px;
-    min-height: 600px;
+    min-height: 700px;
     background: url('../img/promo_BG.png') center (center/cover) no-repeat;
     &__header {
         display: flex;
@@ -62,7 +62,7 @@
     }
     &__block-info {
         margin: 0 auto;
-        margin-top: 45px;
+        margin-top: 85px;
         width: 1020px;
         height: 360px;
     }
@@ -78,6 +78,7 @@
         font-size: 40px;
         font-weight: 300;
         color: #fff;
+        text-transform: uppercase;
     }
     &__line {
         margin: 0 auto;
@@ -99,5 +100,32 @@
         border: 1px solid white;
         border-radius: 100%;
         background-color: #fff;
+    }
+    &__block-icons {
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 1000px;
+        min-height: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__element {
+        width: 160px;
+    }
+    &__icon {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    &__icon-descr {
+        margin-top: 25px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
     }
 }
