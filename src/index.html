@@ -22,7 +22,7 @@
                     <div class="promo__descr">Есть вопросы?</div>
                     <div  class="promo__phone"><a href="tel:+375295101421">+375(29) 5-101-421</a></div>
                 </div>
-                <button class="button">перезвоните мне</button>
+                <button data-modal="consultation" class="button">перезвоните мне</button>
             </nav>
             <div class="promo__block-info">
                 <div class="promo__title">копи-центр</div>
@@ -142,15 +142,40 @@
     </section>
 
     <div class="overlay">
-        <div class="modal">
-            <div class="modal__close"></div>
-            <div class="modal__title"></div>
-            <div class="modal__subtitle"></div>
+        <div class="modal" id="consultation">
+            <div class="modal__close">&times</div>
+            <div class="modal__title">Просто заполните форму заявки</div>
+            <div class="modal__subtitle">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form">
-                
+                <input required name="name" type="text" placeholder="Ваше имя">
+                <input required name="phone" type="tel" placeholder="Ваш телефон">
+                <input required name="email" type="email" placeholder="Ваше E-mail">
+
+                <button class="button button_form">заказать консультацию</button>
             </form>
         </div>
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times</div>
+            <div class="modal__title">Спасибо за вашу заявку</div>
+            <div class="modal__subtitle modal__subtitle_mini">Наш менеджер свяжется с вами в ближайшее время!</div>
+        </div>
     </div>
+
+    <section class="staff">
+        <div class="container">
+            <div class="staff__logo"><img src="icons/staff.png" alt="staff"></div>
+            <div class="staff__title">Сотрудники</div>
+            <div class="staff__descr">
+                Наши сотрубники очень квалифицированы и компитентны, они легко
+                находят подход даже к самым трудным клинтам. Также главной их особенностью
+                является, то что они очень вежливые и снисходительные даже самому грубому клиенту.
+            </div>
+        </div>
+    </section>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
