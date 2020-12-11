@@ -24,7 +24,7 @@ $(document).ready(function(){
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
-            $('#consultation').fadeOut();
+            $('#consultation, #feedback').fadeOut();
             $('.overlay, #thanks').fadeIn('slow');
             $('form').trigger('reset');
         });
