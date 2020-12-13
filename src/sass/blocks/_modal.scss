@@ -1,6 +1,8 @@
 .modal {
-    z-index: 1000;
     display: none;
+    min-height: 400px;
+    width: 380px;
+    z-index: 1000;
     flex-direction: column;
     align-items: center;
     position: absolute;
@@ -8,8 +10,6 @@
     top: 50%;
     transform: translate(-50%, -50%);
     padding: 30px 25px;
-    width: 380px;
-    min-height: 400px;
     background-color: #b9b9b9;
     &__close {
         position: absolute;
