@@ -34,8 +34,8 @@ $(document).ready(function(){
     //carousel 
 
     $('.carousel').slick({
-        prevArrow: '<button type="button" class="slick-prev"><img src="../img/left.png" alt="left"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../img/right.png" alt="right"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="img/left.png" alt="left"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="img/right.png" alt="right"></button>',
         infinite: true,
         slidesToShow: 1,
         adaptiveHeight: true
