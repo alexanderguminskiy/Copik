@@ -1,0 +1,93 @@
+@media (max-width: 1200px) {
+    .promo {
+        &__header {
+            width: 960px;
+        }
+        &__logo {
+            width: 60px;
+            height: 60px;
+        }
+        .button {
+            margin-top: 9px;
+        }
+        &__block {
+            &-info {
+                width: 940px;
+            }
+            &-icons {
+                width: 920px;
+            }
+        }
+    }
+    .services {
+        &__item {
+            width: 470px;
+        }
+        &__descr {
+            width: 340px;
+        }
+    }
+    .staff {
+        padding: 30px 0 60px 0;
+    }
+    .aboutus {
+        &__wrapper {
+            flex-wrap: wrap;
+            width: 890px;
+            justify-content: space-around;
+        }
+        &__item {
+            width: 325px;
+            margin-bottom: 60px;
+        }
+        &__consultation {
+            width: 890px;
+        }
+    }
+    .footer {
+        height: 415px;
+        &__info {
+            padding: 12px 0 13px 0;
+            width: 369px;
+            min-height: 195px;
+            right: 20px;
+        }
+        &__descr {
+            font-size: 18px;
+        }
+        iframe {
+            height: 420px;
+        }
+    }
+    .slick-next {
+        right: 370px;
+    }
+    .slick-prev {
+        left: 370px;
+    }
+}
+
+@media (max-width: 992px) {
+    .promo {
+        &__logo {
+            display: none;
+        }
+        &__header {
+            position: fixed;
+            background-color: rgba(0,0,0,.6);
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 100%;
+            flex-direction: column;
+        }
+        &__menu-list {
+            width: 200px;
+            flex-direction: column;
+        }
+        &__contacts {
+            display: none;
+        }
+    }
+    
+}
