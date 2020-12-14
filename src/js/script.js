@@ -41,4 +41,14 @@ $(document).ready(function(){
         adaptiveHeight: true
     });
 
+    //pageup 
+
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 1800) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }   
+    });
+
 });
