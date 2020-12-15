@@ -23,6 +23,19 @@
         width: 750px;
     }
 }
+
+@media (max-width: 768px) {
+    .container {
+        width: 550px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 320px;
+    }
+}
+
 @import 'header';
 @import 'promo';
 @import 'buttons';

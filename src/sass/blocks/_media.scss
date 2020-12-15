@@ -95,7 +95,7 @@
             height: 40px;
             cursor: pointer;
             span {
-            transition: .3s all;
+            transition: .6s all;
                 margin-bottom: 10px;
                 display: block;
                 width: 100%;
@@ -143,14 +143,16 @@
         }
         &__menu-list {
             height: 70%;
-            width: 328px;
+            width: 270px;
             flex-direction: column;
             margin: 0 auto;
             margin-top: 20px;
             margin-bottom: 20px;
         }
         &__menu-item {
-            font-size: 36px;
+            font-size: 30px;
+            border-bottom: 1px solid #b8bec1;
+            width: 100%;
         }
         &__contacts {
             display: none;
@@ -228,9 +230,142 @@
     }
     .button {
         margin: 0 auto;
-        margin-bottom: 10px;
-        width: 211px;
+        margin-bottom: 31px;
+        width: 280px;
         height: 45px;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo {
+        &__block {
+            &-info {
+                width: 550px;
+            }
+            &-icons {
+                width: 550px;
+            }
+        }
+        &__subtitle {
+            font-size: 25px;
+        }
+        &__line {
+            width: 500px;
+            hr {
+                width: 233px;
+            }
+        }
+        &__menu {
+            &-list {
+                width: 185px;
+            }
+            &-item {
+                font-size: 24px;
+            }
+        }
+        .button {
+            width: 190px;
+        }
+    }
+    .aboutus {
+        &__wrapper {
+            width: 550px;
+        }
+        &__consultation {
+            width: 500px;
+        }
+    }
+    
+    .button_consultation {
+        bottom: -58px;
+    }
+    .subtitle {
+        width: 500px;
+    }
+    .slick-next {
+        right: 148px;
+    }
+    .slick-prev {
+        left: 148px;
+    }
+    .carousel {
+        &__descr {
+            width: 400px;
+        }
+    }
+    .title {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 576px) {
+    .promo {
+        &__block {
+            &-info {
+                width: 310px;
+            }
+            &-icons {
+                display: none;
+            }
+        }
+        &__title {
+            font-size: 56px;
+        }
+        &__line {
+            width: 300px;
+            hr {
+                width: 135px;
+            }
+        }
+    }
+    .services {
+        &__item {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__descr {
+            &-title {
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            &-info {
+                width: 266px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+    }
+    .staff {
+        &__descr {
+            font-size: 13px;
+        }
+    }
+    .aboutus {
+        &__wrapper {
+            width: 310px;
+        }
+        &__consultation {
+            width: 310px;
+        }
+        .feed-form_consultation {
+            width: 300px;
+            input {
+                width: 277px;
+            }
+        }
+        .button_consultation {
+            width: 277px;
+            font-size: 17px;
+        }
+    }
+    .carousel {
+        &__descr {
+            width: 285px;
+        }
+    }
+    .subtitle {
+        width: 310px;
     }
 }
