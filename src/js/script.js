@@ -53,6 +53,20 @@ $(document).ready(function(){
 
     //humburger
 
+    const menu = document.querySelector('.promo__header'),
+    menuItem = document.querySelectorAll('.promo__header'),
+    hamburger = document.querySelector('.humburger');
 
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('humburger_active');
+        menu.classList.toggle('promo__header_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('humburger_active');
+            menu.classList.toggle('promo__header_active');
+        })
+    })
 
 });

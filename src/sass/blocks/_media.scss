@@ -68,26 +68,169 @@
 }
 
 @media (max-width: 992px) {
+    .header-mobile {
+        z-index: 2000;
+        position: fixed;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        background-color: rgb(236, 235, 235);
+        &__logo {
+            position: fixed;
+            top: 10px;
+            left: 20px;
+            width: 200px;
+            height: 40px;
+            img {
+                height: 100%;
+            }
+        }
+        .humburger {
+            position: fixed;
+            right: 20px;
+            top: 14px;
+            width: 45px;
+            height: 40px;
+            cursor: pointer;
+            span {
+            transition: .3s all;
+                margin-bottom: 10px;
+                display: block;
+                width: 100%;
+                height: 3px;
+                background-color: rgb(77, 76, 76); 
+            }
+            &_active {
+                span {
+                    transition: 0.6 all;
+                    &:nth-child(1) {
+                        margin-top: 12px;
+                        transform: rotate(45deg);
+                    }
+                    &:nth-child(2) {
+                        display: none;
+                    }
+                    &:nth-child(3) {
+                        transform: rotate(-45deg);
+                        margin-top: -12px;
+                    }
+                }
+                
+            }
+        }
+    }
     .promo {
+        min-height: 544px;
         &__logo {
             display: none;
         }
         &__header {
+            z-index: 3000;
+            display: flex;
             position: fixed;
-            background-color: rgba(0,0,0,.6);
+            background-color: gray;
             top: 0;
-            left: 0;
-            width: 50%;
+            left: -100%;
+            width: 40%;
             height: 100%;
             flex-direction: column;
+            transition: .6s all;
+            &_active {
+                left: 0;
+            }
         }
         &__menu-list {
-            width: 200px;
+            height: 70%;
+            width: 328px;
             flex-direction: column;
+            margin: 0 auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        &__menu-item {
+            font-size: 36px;
         }
         &__contacts {
             display: none;
         }
+        &__subtitle {
+            font-size: 35px;
+        }
+        &__block {
+            &-info {
+                margin-top: 120px;
+                width: 740px;
+            }
+            &-icons {
+                width: 740px;
+            }
+        }
+        &__line {
+            width: 680px;
+            hr {
+                width: 323px;
+            }
+        }
     }
-    
+    .services {
+        padding: 40px 0 86px 0;
+        min-height: 1680px;
+        &__item {
+            margin: 0 auto;
+            margin-top: 64px;
+        }
+    }
+    .aboutus {
+        &__wrapper {
+            width: 720px;
+        }
+        &__item {
+            margin-bottom: 35px;
+        }
+        &__consultation {
+            min-height: 450px;
+            width: 650px;
+        }
+        .feed-form_consultation {
+            width: 500px;
+            flex-direction: column;
+            align-items: center;
+            input {
+                height: 53px;
+                width: 400px;
+            }
+        }
+        .button_consultation {
+            width: 400px;
+            height: 53px;
+            font-size: 23px;
+        }
+    }
+    .footer {
+        height: 245px;
+        iframe {
+            display: none;
+        }
+    }
+    .title {
+        font-size: 33px;
+    }
+    .subtitle {
+        font-size: 16px;
+    }
+    .slick-next {
+        right: 235px;
+    }
+    .slick-prev {
+        left: 235px;
+    }
+    .button {
+        margin: 0 auto;
+        margin-bottom: 10px;
+        width: 211px;
+        height: 45px;
+        font-size: 14px;
+    }
 }
