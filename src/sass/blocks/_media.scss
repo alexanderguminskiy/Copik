@@ -177,7 +177,7 @@
         }
     }
     .services {
-        padding: 40px 0 86px 0;
+        padding: 56px 0 86px 0;
         min-height: 1680px;
         &__item {
             margin: 0 auto;
@@ -185,6 +185,7 @@
         }
     }
     .aboutus {
+        padding-top: 65px;
         &__wrapper {
             width: 720px;
         }
@@ -210,7 +211,15 @@
             font-size: 23px;
         }
     }
+    .reviews {
+        padding-top: 60px;
+    }
     .footer {
+        &__info {
+            width: 320px;
+            position: static;
+            margin: 0 auto;
+        }
         height: 245px;
         iframe {
             display: none;
@@ -239,6 +248,10 @@
 
 @media (max-width: 768px) {
     .promo {
+        
+        &__header {
+            width: 50%;
+        }
         &__block {
             &-info {
                 width: 550px;
@@ -301,12 +314,34 @@
 
 @media (max-width: 576px) {
     .promo {
+        &__subtitle {
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        &__close-mobile {
+            display: block;
+            position: absolute;
+            top: -20px;
+            right: 13px;
+            font-size: 60px;
+            font-weight: 100;
+            cursor: pointer;
+        }
+        &__header {
+            width: 100%;
+        }
         &__block {
             &-info {
                 width: 310px;
+                margin-top: 92px;
             }
             &-icons {
-                display: none;
+                /* display: none; */
+                width: 310px;
+                margin-top: 27px;
+                #element-mobile {
+                    display: none;
+                }
             }
         }
         &__title {
@@ -323,6 +358,8 @@
         &__item {
             flex-direction: column;
             align-items: center;
+            width: 310px;
+            margin-top: 30px;
         }
         &__descr {
             &-title {
@@ -343,11 +380,15 @@
         }
     }
     .aboutus {
+        .title {
+            font-size: 24px;
+        }
         &__wrapper {
             width: 310px;
         }
         &__consultation {
             width: 310px;
+            border: none;
         }
         .feed-form_consultation {
             width: 300px;
@@ -368,4 +409,33 @@
     .subtitle {
         width: 310px;
     }
+    .slick-next {
+        right: 36px;
+    }
+    .slick-prev {
+        left: 36px;
+    }
+    .modal {
+        min-height: 353px;
+        width: 320px;
+        padding: 26px 25px 22px 25px;
+        &__title {
+            font-size: 21px;
+            margin-bottom: 14px;
+        }
+        &__subtitle {
+            display: none;
+        }
+        &__close {
+            top: -20px;
+            right: 2px;
+        }
+        .button {
+            margin-bottom: 0px;
+        }
+    }
+    .feed-form {
+        width: 275px;
+    }
+    
 }

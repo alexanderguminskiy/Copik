@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="icons/favicon.ico" type="image/ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Копи-Центр</title>
 </head>
@@ -21,11 +22,12 @@
     <section class="promo" id="promo">
         <div class="container">
             <nav class="promo__header">
+                <div class="promo__close-mobile">&times</div>
                 <div class="promo__logo"><a href="#"><img src="icons/logo.png" alt="logo"></a></div>
                 <ul class="promo__menu-list">
-                    <li class="promo__menu-item"><a href="#service">Услуги</a></li>
-                    <li class="promo__menu-item"><a href="#">Цены</a></li>
-                    <li class="promo__menu-item"><a href="#contacts">График работы</a></li>
+                    <li class="promo__menu-item"><a href="#aboutus">О нас</a></li>
+                    <li class="promo__menu-item"><a href="https://ptech.by/files/price.pdf" target="_blank">Цены</a></li>
+                    <li class="promo__menu-item"><a href="#service">Наши услуги</a></li>
                     <li class="promo__menu-item"><a href="#reviews">Отзывы</a></li>
                     <li class="promo__menu-item"><a href="#contacts">Контакты</a></li>
                 </ul>
@@ -56,7 +58,7 @@
                         <div class="promo__icon"><img src="icons/copy.png" alt="icon"></div>
                         <div class="promo__icon-descr">Сувенирная продукция</div>
                     </div>
-                    <div class="promo__element">
+                    <div class="promo__element" id="element-mobile">
                         <div class="promo__icon"><img src="icons/design.png" alt="icon"></div>
                         <div class="promo__icon-descr">Дизайнерские услуги</div>
                     </div>
@@ -68,7 +70,7 @@
         <div class="container">
             <div class="title"><div>Услуги</div></div>
             <div class="services__wrapper">
-                <div class="services__item">
+                <div class="services__item wow fadeIn" data-wow-duration="3s">
                     <div class="services__logo"><img src="icons/services/6.png" alt=""></div>
                     <div class="services__descr">
                         <div class="services__descr-title">Печатные услуги</div>
@@ -78,7 +80,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="services__item">
+                <div class="services__item wow fadeIn" data-wow-duration="3s">
                     <div class="services__logo"><img src="icons/services/2.png" alt=""></div>
                     <div class="services__descr">
                         <div class="services__descr-title">Фото на документы</div>
@@ -88,7 +90,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="services__item">
+                <div class="services__item wow fadeIn" data-wow-duration="3s">
                     <div class="services__logo"><img src="icons/services/5.png" alt=""></div>
                     <div class="services__descr">
                         <div class="services__descr-title">Сувениры с фото</div>
@@ -98,7 +100,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="services__item">
+                <div class="services__item wow fadeIn" data-wow-duration="3s">
                     <div class="services__logo"><img src="icons/services/1.png" alt=""></div>
                     <div class="services__descr">
                         <div class="services__descr-title">Печать фото</div>
@@ -108,7 +110,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="services__item">
+                <div class="services__item wow fadeIn" data-wow-duration="3s">
                     <div class="services__logo"><img src="icons/services/3.png" alt=""></div>
                     <div class="services__descr">
                         <div class="services__descr-title">Дизайн</div>
@@ -118,7 +120,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="services__item">
+                <div class="services__item wow fadeIn" data-wow-duration="3s">
                     <div class="services__logo"><img src="icons/services/6.png" alt=""></div>
                     <div class="services__descr">
                         <div class="services__descr-title">Принт на майках</div>
@@ -128,7 +130,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="services__item">
+                <div class="services__item wow fadeIn" data-wow-duration="3s">
                     <div class="services__logo"><img src="icons/services/1.png" alt=""></div>
                     <div class="services__descr">
                         <div class="services__descr-title">Изготовление визиток</div>
@@ -138,7 +140,7 @@
                     </div>
                     </div>
                 </div>
-                <div class="services__item">
+                <div class="services__item wow fadeIn" data-wow-duration="3s">
                     <div class="services__logo"><img src="icons/services/1.png" alt=""></div>
                     <div class="services__descr">
                         <div class="services__descr-title">Печать рекламной продукции</div>
@@ -155,7 +157,7 @@
     <div class="overlay">
         <div class="modal" id="consultation">
             <div class="modal__close">&times</div>
-            <div class="modal__title">Просто заполните форму заявки</div>
+            <div class="modal__title">Заполните форму заявки</div>
             <div class="modal__subtitle">и мы перезвоним вам в течении 10 минут</div>
             <form class="feed-form">
                 <input required name="name" type="text" placeholder="Ваше имя">
@@ -176,7 +178,7 @@
         <div class="container">
             <div class="staff__logo"><img src="icons/staff.png" alt="staff"></div>
             <div class="staff__title">Сотрудники</div>
-            <div class="staff__descr">
+            <div class="staff__descr wow zoomIn">
                 Наши сотрубники очень квалифицированы и компитентны, они легко
                 находят подход даже к самым трудным клинтам. Также главной их особенностью
                 является, то что они очень вежливые и снисходительные даже самому грубому клиенту.
@@ -184,7 +186,7 @@
         </div>
     </section>
 
-    <section class="aboutus">
+    <section class="aboutus" id="aboutus">
         <div class="container">
             <div class="title">Чем мы занимаемся</div>
             <div class="line"><hr></div>
@@ -193,7 +195,7 @@
                 полигррафические услуги широкого спектора.
             </div>
             <div class="aboutus__wrapper">
-                <div class="aboutus__item">
+                <div class="aboutus__item wow fadeInUp" data-wow-duration="1s">
                     <div class="aboutus__item-title">полиграфия</div>
                     <div class="aboutus__item-info">
                         <div class="aboutus__item-logo"><img src="icons/aboutus/1.png" alt=""></div>
@@ -208,7 +210,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="aboutus__item">
+                <div class="aboutus__item wow fadeInUp" data-wow-duration="1.5s">
                     <div class="aboutus__item-title">Сувениры</div>
                     <div class="aboutus__item-info">
                         <div class="aboutus__item-logo"><img src="icons/aboutus/2.png" alt=""></div>
@@ -222,7 +224,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="aboutus__item">
+                <div class="aboutus__item wow fadeInUp" data-wow-duration="2s">
                     <div class="aboutus__item-title">Реклама</div>
                     <div class="aboutus__item-info">
                         <div class="aboutus__item-logo"><img src="icons/aboutus/3.png" alt=""></div>
@@ -234,7 +236,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="aboutus__item">
+                <div class="aboutus__item wow fadeInUp" data-wow-duration="2.5s">
                     <div class="aboutus__item-title">Другие услуги</div>
                     <div class="aboutus__item-info">
                         <div class="aboutus__item-logo"><img src="icons/aboutus/4.png" alt=""></div>
@@ -320,6 +322,7 @@
     <script src="js/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

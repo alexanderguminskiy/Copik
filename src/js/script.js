@@ -69,4 +69,8 @@ $(document).ready(function(){
         })
     })
 
+    //WOW JS
+
+    new WOW().init();
+
 });

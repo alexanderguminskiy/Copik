@@ -2,6 +2,9 @@
     padding-top: 20px;
     min-height: 700px;
     background: url('../img/promo_BG.png') center (center/cover) no-repeat;
+    &__close-mobile {
+        display: none;
+    }
     &__header {
         display: flex;
         justify-content: space-between;
