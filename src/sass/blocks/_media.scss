@@ -130,7 +130,7 @@
             z-index: 3000;
             display: flex;
             position: fixed;
-            background-color: gray;
+            background-color: #fff;
             top: 0;
             left: -100%;
             width: 40%;
@@ -146,13 +146,19 @@
             width: 270px;
             flex-direction: column;
             margin: 0 auto;
-            margin-top: 20px;
+            margin-top: 51px;
             margin-bottom: 20px;
         }
         &__menu-item {
             font-size: 30px;
-            border-bottom: 1px solid #b8bec1;
+            border: 1px solid #b8bec1;
+            border-radius: 20px;
             width: 100%;
+            text-align: center;
+            a {
+                color: $main-color;
+                text-transform: uppercase;
+            }
         }
         &__contacts {
             display: none;
@@ -221,9 +227,6 @@
             margin: 0 auto;
         }
         height: 245px;
-        iframe {
-            display: none;
-        }
     }
     .title {
         font-size: 33px;
@@ -314,6 +317,11 @@
 
 @media (max-width: 576px) {
     .promo {
+        &__menu {
+            &-item {
+                font-size: 24px;
+            }
+        }
         &__subtitle {
             font-size: 20px;
             margin-top: 10px;
